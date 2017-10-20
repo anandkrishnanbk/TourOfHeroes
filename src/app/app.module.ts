@@ -20,7 +20,8 @@ import { InMemoryDataService }  from './in-memory-data.service';
     FormsModule,
     AppRoutingModule,
     HttpModule,
-    InMemoryWebApiModule.forRoot(InMemoryDataService)
+    //InMemoryWebApiModule.forRoot(InMemoryDataService, { dataEncapsulation: false })
+    InMemoryWebApiModule.forRoot(InMemoryDataService, { dataEncapsulation: true })
   ],
   declarations: [
     AppComponent,
